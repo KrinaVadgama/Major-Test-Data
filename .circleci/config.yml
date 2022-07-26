@@ -361,6 +361,18 @@ jobs:
      - image: cimg/base:2022.05
     steps:
       - run: echo "Say hello to YAML!"
+      
+  Imput_61:
+    docker:
+     - image: cimg/base:2022.05
+    steps:
+      - run: echo "Say hello to YAML!"
+
+  Imput_62:
+    docker:
+     - image: cimg/base:2022.05
+    steps:
+      - run: echo "Say hello to YAML!"
 
 workflows:
   # Name of workflow
@@ -599,5 +611,15 @@ workflows:
 
   workflow_60:
     jobs:
-      - Imput_50
+      - Imput_60
+      
+  workflow_61:
+    jobs:
+      - Imput_61
+      
+   workflow_62:
+    jobs:
+      - Imput_62
+      
+      
 
